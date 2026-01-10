@@ -32,6 +32,8 @@ for ep in trange(NUM_EPISODES):
 
         next_obs, reward, terminated, truncated, info = env.step(action)
         done = terminated or truncated
+        # terminated → failed or success condition
+        # truncated → time limit reached
 
         obs_small = cv2.resize(obs, (64, 64))
 
