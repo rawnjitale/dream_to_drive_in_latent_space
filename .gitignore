@@ -1,1 +1,4 @@
 car_env/
+datasets/
+world_model_dataset/dataset.npz
+__pycache__/
