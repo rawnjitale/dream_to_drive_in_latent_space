@@ -3,12 +3,11 @@
 
 # Dream To Drive in Latent Space
 
-Project Overview:
 This project implements a World Model for a self-driving car using reinforcement learning and deep learning techniques. The model learns a latent representation of the car's environment through a Variational Autoencoder (VAE) and predicts future states using a Transformer / RNN-based dynamics model. The goal is to simulate and understand the environment efficiently while reducing the need for real-world data collection.
 
 ---
 
-Features:
+# Features:
 
 * Collect driving data from OpenAI Gym CarRacing-v3 environment.
 * Train a Variational Autoencoder (VAE) to encode high-dimensional images into low-dimensional latent vectors.
@@ -17,16 +16,11 @@ Features:
 * Generate sequences of imagined states for planning or reinforcement learning.
 
 ---
-
-Installation:
-Install all dependencies using:
-pip install -r requirements.txt
-
----
+# Architecture - Pipeline
 ![Architecture Pipeline](images/pipeline.png)
 
 
-Description:
+# Description:
 
 Data Collection: Collect observations, actions, rewards, and done flags from the CarRacing environment.
 
@@ -40,7 +34,7 @@ Decoder (Optional): Reconstruct images from predicted latent vectors for visuali
 
 ---
 
-References:
+# References:
 
 1. Ha, David & Schmidhuber, Jürgen. (2018). World Models. [https://arxiv.org/abs/1803.10122](https://arxiv.org/abs/1803.10122)
 2. Hafner, Danijar et al. (2020). Dreamer: Reinforcement Learning with Latent Dynamics Models. [https://arxiv.org/abs/1912.01603](https://arxiv.org/abs/1912.01603)
