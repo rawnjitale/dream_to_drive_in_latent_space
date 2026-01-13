@@ -6,8 +6,8 @@ from tqdm import trange
 
 ENV_NAME = "CarRacing-v3"
 SAVE_DIR = "world_model_dataset"
-NUM_EPISODES = 3
-MAX_STEPS = 100
+NUM_EPISODES = 100
+MAX_STEPS = 1000
 
 os.makedirs(SAVE_DIR, exist_ok=True)
 
@@ -34,7 +34,7 @@ for ep in trange(NUM_EPISODES):
         done = terminated or truncated
         # terminated → failed or success condition
         # truncated → time limit reached
-
+        # print(obs.shape)
         obs_small = cv2.resize(obs, (64, 64))
 
         all_obs.append(obs_small)
@@ -67,8 +67,20 @@ print("Dataset saved!")
 print("Observations shape:", all_obs.shape)
 
 
-data = np.load("world_model_dataset/dataset.npz")
-print(data["observations"].shape)
-print(data["actions"].shape)
-print(data["rewards"].shape)
-print(data["dones"])
+data = np.load("world_model_dataset/dataset.npz")["observations"]
+# print(data["observations"].shape)
+# print(data["actions"].shape)
+# print(data["rewards"].shape)
+# print(data["dones"])
+
+
+import matplotlib
+matplotlib.use("TkAgg")  # or "TkAgg" depending on your system
+import matplotlib.pyplot as plt
+import numpy as np
+
+image_array = data[11]
+
+plt.imshow(image_array)
+plt.axis('off')  
+plt.show()
