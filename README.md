@@ -1,6 +1,6 @@
 # World Model Transformer for Policy Learning
 
-## 🚀 Project Introduction
+## Introduction
 
 In this project, trained an agent to learn policies using a **Transformer-based World Model architecture**.  
 The goal is to build a system that can understand environment dynamics in a latent space and use that understanding to take optimal actions.
@@ -14,7 +14,7 @@ This approach improves **sample efficiency**, **generalization**, and provides a
 
 ---
 
-## 🧠 World Model Architecture
+##  World Model Architecture
 
 ![World Model Architecture](images/world_model_archi.png)
 
@@ -26,7 +26,7 @@ The architecture consists of three main components:
 
 ---
 
-## 👁️ Vision Model (V)
+##  Vision Model (V)
 
 ![VAE Reconstruction](images/recon_V.png)
 
@@ -57,7 +57,7 @@ This allows the agent to better understand how the environment evolves over time
 
 ---
 
-## 🔮 Learning Environment Dynamics
+##  Learning Environment Dynamics
 
 The model is trained such that it predicts the **next state latent representation**.
 
@@ -72,7 +72,7 @@ The above figure shows decoded predictions from the model so that we can visuall
 
 ---
 
-## 🏗️ Overall Architecture
+## Overall Architecture
 
 ![Overall Architecture](images/pipeline.png)
 
@@ -97,7 +97,7 @@ The controller is trained using **CMA-ES (Covariance Matrix Adaptation Evolution
 
 ---
 
-## 📈 Generation vs Reward
+## Generation vs Reward
 
 ![Reward Graph](images/reward.png)
 
@@ -109,4 +109,4 @@ The graph shows:
 
 ## 🎥 Final Result (Video)
 
-![Demo Video](videos/video.mp4)
+<video src="videos/video.mp4" controls width="600"></video>
