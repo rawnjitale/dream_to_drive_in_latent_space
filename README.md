@@ -109,6 +109,4 @@ The graph shows:
 
 ## Final Result (Video) using world model(M) and VAE model(V)
 
-<video width="600" controls>
-  <source src="videos/video.mp4" type="video/mp4">
-</video>
+![video](videos/video.mp4)
