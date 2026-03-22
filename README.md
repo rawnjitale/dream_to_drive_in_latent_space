@@ -74,7 +74,7 @@ The above figure shows decoded predictions from the model so that we can visuall
 
 ## Overall Architecture
 
-![Overall Architecture](images/pipeline.png)
+![Overall Architecture](images/system_arch.png)
 
 This combines:
 - Vision model (V)
