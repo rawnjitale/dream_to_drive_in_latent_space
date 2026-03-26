@@ -7,3 +7,5 @@ ppo_models/
 ppo_logs/
 .vscode/
 vae_carracing.pth
+trained_controller.npz
+controller_params_gen_25.npy

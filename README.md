@@ -109,4 +109,4 @@ The graph shows:
 
 ## Final Result (Video) using world model(M) and VAE model(V)
 
-![video](videos/final.mp4)
+![video](videos/final.gif)
